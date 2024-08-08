@@ -2,37 +2,36 @@
 
 
 void main()
-
 {
-    int y;
+    int y,x,number;
     int N=0,max=-99999999999;
+    scanf("%d",&x);
     while(1)
     {
         scanf("%d",&y);
         if(y==0)
         {
             break;
-
         }
-        else if(y==y)
+        if(x==y)
         {
             N+=1;
         }
         else
         {
-            N = 0;
+            x = y;
         }
         if(N>=max)
         {
             max = N;
+            number = x;
         }
 
-        number = y;
-        if(number = y)
 
     }
     printf("%d\n",max);
-    printf("%d\n",);
+    printf("%d\n",number);
 
+// this is code not finish yet.
 
 }
