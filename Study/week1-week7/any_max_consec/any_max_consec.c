@@ -6,11 +6,12 @@ void main()
 {
     int y,py;
     int number;
-    int N=1,max=-99999999999;
+    int N=1,max=-999999;
+    scanf("%d",&y);
     while(1)
     {
-        scanf("%d",&y);
-        if(y==0)
+        scanf("%d",&py);
+        if(py==0)
         {
             break;
 
@@ -18,19 +19,18 @@ void main()
         {
             N+=1;
         }
-        else if(py!=y)
+        if(py!=y)
         { 
             py=y;
         } 
-        else
-        {
-            if(N>=max)
+            if(N>max)
            {
               max = N;
               number = y;
+              N = 1;
            }
-           N = 0;
-        }
+        
+        
 
     }
     printf("%d\n",max);
