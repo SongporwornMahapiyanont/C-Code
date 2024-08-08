@@ -4,8 +4,9 @@
 void main()
 
 {
-    int y;
-    int N=0,max=-99999999999;
+    int y,py;
+    int number;
+    int N=1,max=-99999999999;
     while(1)
     {
         scanf("%d",&y);
@@ -13,26 +14,27 @@ void main()
         {
             break;
 
-        }
-        else if(y==y)
+        }else if(py==y)
         {
             N+=1;
         }
+        else if(py!=y)
+        { 
+            py=y;
+        } 
         else
         {
-            N = 0;
+            if(N>=max)
+           {
+              max = N;
+              number = y;
+           }
+           N = 0;
         }
-        if(N>=max)
-        {
-            max = N;
-        }
-
-        number = y;
-        if(number = y)
 
     }
     printf("%d\n",max);
-    printf("%d\n",);
+    printf("%d\n",number);
 
 
 }
