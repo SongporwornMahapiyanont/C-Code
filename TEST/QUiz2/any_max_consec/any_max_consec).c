@@ -3,8 +3,8 @@
 void main()
 {
     int input,target,amount=1;
-    int max=-99999999;
-    int maxtarget;
+    int max= 1;
+    int maxtarget = target; 
 
     scanf("%d",&target);
     while(1)
