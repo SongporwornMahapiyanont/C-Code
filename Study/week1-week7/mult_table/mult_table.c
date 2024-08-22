@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main()
-{   int input,i=1;
+{   int input,i=12;
     scanf("%d",&input);
     if(input>=1 && input<=99)
     {
