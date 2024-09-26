@@ -3,7 +3,7 @@ void main()
 {
     int M,N;
     scanf("%d %d",&M,&N);
-    int array[100][100];
+    int array[M][N];
 
     int K;
     scanf("%d",&K);
